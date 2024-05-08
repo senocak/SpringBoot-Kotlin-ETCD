@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: Spring Kotlin ETCD
+    etcd:
+        host: http://localhost:2379
+        user: root
+        password: senocak
+server:
+    port: 8091

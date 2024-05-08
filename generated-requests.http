@@ -1,0 +1,25 @@
+### Get All Data
+GET http://127.0.0.1:8091/etcd
+
+### Get By Id
+GET http://127.0.0.1:8091/etcd/5974ab1c-bbfe-43b3-a689-623a29ad15d7
+
+### Get All Keys
+GET http://127.0.0.1:8091/etcd/keys
+
+### Create New Data
+POST http://127.0.0.1:8091/etcd
+Content-Type: application/json
+
+{
+  "title": "{{$random.alphanumeric(10)}}",
+  "author": "{{$random.email}}"
+}
+
+### Delete All Data
+DELETE http://127.0.0.1:8091/etcd
+
+### Delete Single Data
+DELETE http://127.0.0.1:8091/etcd/cd45f051-0378-413a-89ed-49d3cf90e9a8
+
+
